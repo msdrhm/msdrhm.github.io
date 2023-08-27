@@ -42,7 +42,7 @@
               <!-- <li class="nav-item"><a class="nav-link" href="#interests">Interests</a></li> -->
               <li class="nav-item"><a class="nav-link" href="#Publications">Publications</a></li>
               
-              <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+              <!-- <li class="nav-item"><a class="nav-link" href="#education">Education</a></li> -->
               <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
               <!-- <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li> -->
               <!-- <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li> -->
@@ -114,6 +114,15 @@
           <div class="col-sm-10">
             <div class="pb-1 fw-bolder">Tehran, Iran</div>
           </div>
+
+          <div class="col-sm-2">
+            <div class="pb-1">Education:</div>
+          </div>
+          <div class="col-sm-10">
+            <div class="pb-1 fw-bolder">MS in Control Engineering, Univerisity of Tehran, Iran, 2019-2023</div>
+            <div class="pb-1 fw-bolder">BS in Electrical Engineering, Imam Khomeini International University, Iran, 2015-2019</div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -175,19 +184,54 @@
                 <h3 class="h5 mb-1">
                   <a 
                   href="https://arxiv.org/abs/2308.12726" style="text-decoration:underline; color:#6699CC">
-                  Continuous Reinforcement Learning-based Dynamic Difficulty Adjustment in a Visual Working Memory Game 
+                  Reinforcement Learning-based Dynamic Difficulty Adjustment 
                   </a>  <sup style="font-size:x-small; font-weight:normal;">Master Thesis</sup></h3>
                 <div class="text-muted text-small">Under Review</div>
               </div>
             </div>
           </div>
-
+          
+          
           <div class="card-body px-3 py-2">
-            <p> Dynamic Difficulty Adjustment (DDA) is a viable approach to enhance a player's experience in video games. Recently, Reinforcement Learning (RL) methods have been employed for DDA in non-competitive games; nevertheless, they rely solely on discrete state-action space with a small search space. In this paper, we propose a continuous RL-based DDA methodology for a visual working memory (VWM) game to handle the complex search space for the difficulty of memorization. The proposed RL-based DDA tailors game difficulty based on the player's score and game difficulty in the last trial. 
-                </p>
-            <!-- <p>◦ Formulated a reinforcement learning problem to produce personalized memory tasks based on users' performance.</p> -->
-            <!-- <p> </p> -->
+            <p>
+              <a class="read-more-toggle" href="#">Read More</a>
+            </p>
+            <div class="description" style="display: none;">
+              <p>Dynamic Difficulty Adjustment (DDA) is a viable approach to enhance a player's experience in video games. Recently, Reinforcement Learning (RL) methods have been employed for DDA in non-competitive games; nevertheless, they rely solely on discrete state-action space with a small search space. In this paper, we propose a continuous RL-based DDA methodology for a visual working memory (VWM) game to handle the complex search space for the difficulty of memorization. The proposed RL-based DDA tailors game difficulty based on the player's score and game difficulty in the last trial.</p>
+              <!-- Your detailed description content goes here -->
+            </div>
           </div>
+
+          <style>
+            /* Add your existing CSS styles here */
+
+            .description {
+              margin-top: 10px;
+            }
+          </style>
+
+          <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              const readMoreLinks = document.querySelectorAll('.read-more-toggle');
+
+              readMoreLinks.forEach(link => {
+                link.addEventListener('click', function(event) {
+                  event.preventDefault();
+                  const description = this.parentElement.nextElementSibling;
+
+                  if (description.style.display === 'none') {
+                    description.style.display = 'block';
+                    this.textContent = 'Read Less';
+                  } else {
+                    description.style.display = 'none';
+                    this.textContent = 'Read More';
+                  }
+                });
+              });
+            });
+          </script>
+
+
         </div>
       </div>
       <div class="col-md-6 d-flex">
@@ -202,18 +246,91 @@
           </div>
           <div class="card-body px-3 py-2">
             <p>
-              Our innovative research focuses on enhancing early autism screening. With 1 in 160 children affected, our multi-modal system combines tools like Roboparrot for social interaction, a sensorized toy car for play patterns, and Lightwheel for sensory reactions. Following a 15-20 minute interaction, computer vision and machine learning techniques analyze the data, enabling us to differentiate between autistic and non-autistic toddlers. Our approach surpasses the capabilities of individual tools, offering a comprehensive and accurate solution for autism screening.
+              <a class="read-more-toggle" href="#">Read More</a>
             </p>
-            <!-- <p>The relation between the measure and Pupil dilation is under study by an eye tracker.</p> -->
+            <div class="description" style="display: none;">
+              <p>Our innovative research focuses on enhancing early autism screening. With 1 in 160 children affected, our multi-modal system combines tools like Roboparrot for social interaction, a sensorized toy car for play patterns, and Lightwheel for sensory reactions. Following a 15-20 minute interaction, computer vision and machine learning techniques analyze the data, enabling us to differentiate between autistic and non-autistic toddlers. Our approach surpasses the capabilities of individual tools, offering a comprehensive and accurate solution for autism screening.</p>
+              <!-- Your detailed description content goes here -->
+            </div>
           </div>
+          
+          <style>
+            /* Add your existing CSS styles here */
+          
+            .description {
+              margin-top: 10px;
+            }
+          </style>
+          
+          <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              const readMoreLinks = document.querySelectorAll('.read-more-toggle');
+          
+              readMoreLinks.forEach(link => {
+                link.addEventListener('click', function(event) {
+                  event.preventDefault();
+                  const description = this.parentElement.nextElementSibling;
+          
+                  if (description.style.display === 'none') {
+                    description.style.display = 'block';
+                    this.textContent = 'Read Less';
+                  } else {
+                    description.style.display = 'none';
+                    this.textContent = 'Read More';
+                  }
+                });
+              });
+            });
+          </script>
+          
         </div>
       </div>
     </div>
   </div>
 </div>
 
+<!-- <div class="card-body px-3 py-2">
+  <p>
+    <a class="read-more-toggle" href="#">Read More</a>
+  </p>
+  <div class="description" style="display: none;">
+    <p>DESCRIPTION</p>
+  </div>
+</div> -->
+
+<style>
+  /* Add your existing CSS styles here */
+
+  .description {
+    margin-top: 10px;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const readMoreLinks = document.querySelectorAll('.read-more-toggle');
+
+    readMoreLinks.forEach(link => {
+      link.addEventListener('click', function(event) {
+        event.preventDefault();
+        const description = this.parentElement.nextElementSibling;
+
+        if (description.style.display === 'none') {
+          description.style.display = 'block';
+          this.textContent = 'Read Less';
+        } else {
+          description.style.display = 'none';
+          this.textContent = 'Read More';
+        }
+      });
+    });
+  });
+</script>
+
+
+
 <!--  education -->
-<div class="section px-3 px-lg-4 pt-5" id="education">
+<!-- <div class="section px-3 px-lg-4 pt-5" id="education">
   <div class="container-narrow">
     <div class="text-center mb-5">
       <h2 class="marker marker-center">Education</h2>
@@ -225,7 +342,6 @@
             <div class="d-flex justify-content-between">
               <div>
                 <h3 class="h5 mb-1">University of Tehran</h3>
-                <!-- <div class="text-muted text-small">master of EE <small>(2012-2014)</small></div> -->
               </div><img src="images/services/ut.svg" width="48" height="48" alt="UT"/>
             </div>
           </div>
@@ -236,7 +352,6 @@
             <p style="font-size:12px; margin-left: 5%;"> Dynamic Difficulty Adjustment through Reinforcement Learning </p>
             <dt> GPA </dt>
             <p style="font-size:12px; margin-left: 5%;"> 3.53/4 </p>
-            <!-- <p style="font-size:10px; margin-left: 5%;"> Thesis </p> -->
             
           </div>
         </div>
@@ -247,7 +362,6 @@
             <div class="d-flex justify-content-between">
               <div>
                 <h3 class="h5 mb-1">Imam Khomeini International University</h3>
-                <!-- <div class="text-muted text-small"> Bachelor mokhaberat <small>(2015-2018)</small></div> -->
               </div><img src="images/services/imam.svg" width="48" height="48" alt="Imam"/>
             </div>
           </div>
@@ -263,7 +377,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- my skills -->
 <div class="section px-3 px-lg-4 pt-5" id="skills">
